@@ -1,147 +1,51 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <title>Justin Luzong | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
-
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="img/w3newbie.png">
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbar-collapse-main">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="active">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+<nav id="navbar" class="navbar navbar-expand bg-dark fixed-top" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Justin Luzong</a>
   </div>
+  <ul class="nav navbar-nav navbar-right">
+    <li class="nav-item active">
+      <a class="nav-link" href="#welcome-section">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#links">Links</a>
+    </li>
+  </ul>
 </nav>
 
-<div id="home">
-  <div class="landing-text">
-    <h1>Justin Luzong</h1>
-    <h3>Testing, testing, 1, 2, 3.</h3>
-    <a href="#" class="btn btn-default btn-lg">Get Started</a>
-  </div>
-</div>
+<body>
+  <section id="welcome-section">
+    <div id="welcome-text">
+      <h1>Justin Luzong</h1>
+      <h2>Front End Developer</h2>
+      <a id="resume-button" href="https://drive.google.com/file/d/14oOcfXEEX25GYq9lT-8WZc9gXTIQJnYu/view?usp=sharing" target="_blank">Resume</a>
+    </div>
+  </section>
 
-<div class="padding">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-      <img src="img/bootstrap.png">
-    </div>
-    <div class="col-sm-6 text-center">
-      <h2>All About Using Bootstrap.</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut ante vitae magna porttitor semper. Quisque nunc leo, efficitur vel nunc ac, vehicula interdum quam. In in finibus eros. Sed lacinia et turpis sed porta. Ut sed dapibus mi. Suspendisse ultrices metus a consequat suscipit.</p>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut ante vitae magna porttitor semper. Quisque nunc leo, efficitur vel nunc ac, vehicula interdum quam. In in finibus eros. Sed lacinia et turpis sed porta. Ut sed dapibus mi. Suspendisse ultrices metus a consequat suscipit.</p>
-    </div>
-  </div>
-</div>
-</div>
+  <section id="projects" class="bg-dark">
+    <h2>Projects</h2>
+  </section>
 
-<div class="padding">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-6 vol-xs-12">
-      <h4>Built with Sass</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut ante vitae magna porttitor semper. Quisque nunc leo, efficitur vel nunc ac, vehicula interdum quam. In in finibus eros. Sed lacinia et turpis sed porta. Ut sed dapibus mi. Suspendisse ultrices metus a consequat suscipit.</p>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-6 vol-xs-12">
-      <img src="img/sass.png" class=:img-responsive">
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-6 vol-xs-12">
-      <h4>And Less</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut ante vitae magna porttitor semper. Quisque nunc leo, efficitur vel nunc ac, vehicula interdum quam. In in finibus eros. Sed lacinia et turpis sed porta. Ut sed dapibus mi. Suspendisse ultrices metus a consequat suscipit.</p>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-6 vol-xs-12">
-      <img src="img/less.png" class=:img-responsive">
-    </div>
-  </div>
-</div>
-</div>
+  <section id="links">
+    <h2>Links</h2>
+    <ul id="link-list" class="list-inline">
+      <li class="list-inline-item"><a class="social-link" href="https://www.linkedin.com/in/justinluzong/" target="_blank">LinkedIn</a></li>
+      <li class="list-inline-item"><a class="social-link" href="https://codepen.io/juiceytin/" target="_blank">CodePen</a></li>
+      <li class="list-inline-item"><a class="social-link" href="https://github.com/justinluzong" target="_blank">GitHub</a></li>
+      <li class="list-inline-item"><a id="profile-link" class="social-link" href="https://www.freecodecamp.org/justinluzong" target="_blank">FreeCodeCamp</a></li>
+      <li class="list-inline-item"><a class="social-link" href="https://drive.google.com/file/d/14oOcfXEEX25GYq9lT-8WZc9gXTIQJnYu/view?usp=sharing" target="_blank">Resume</a></li>
+      <li class="list-inline-item"><a class="social-link" href="mailto:justinaluzong@gmail.com" target="_blank">Email</a></li>
+    </ul>
+  </section>
 
-<div id="fixed">
-</div>
-
-<div class="padding">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-      <h4>Here's the cool thing about Bootstrap...</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut ante vitae magna porttitor semper. Quisque nunc leo, efficitur vel nunc ac, vehicula interdum quam. In in finibus eros. Sed lacinia et turpis sed porta. Ut sed dapibus mi. Suspendisse ultrices metus a consequat suscipit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut ante vitae magna porttitor semper. Quisque nunc leo, efficitur vel nunc ac, vehicula interdum quam. In in finibus eros. Sed lacinia et turpis sed porta. Ut sed dapibus mi. Suspendisse ultrices metus a consequat suscipit. Aliquam posuere interdum justo eget euismod. Nullam vitae fringilla nunc. Aenean ac ante elementum, gravida sem vel, faucibus ex.</p>
-    </div>
-    <div class="col-sm-6">
-      <img src="img/bootstrap2.png">
-    </div>
-  </div>
-</div>
-</div>
-
-<footer class="container-fluid text-center">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Contact Us</h3>
-      <br>
-      <h4>Our address and contact info here.</h4>
-    </div>
-    <div class="col-sm-4">
-      <h3>Connect</h3>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-google"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-youtube"></a>
-    </div>
-    <div class="col-sm-4">
-      <img src="img/b.png" class="icon">
-    </div>
-  </div>
-</footer>
-
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-</html>
-
-<!--- iOS Landing Page Fix
-<section>
-  <div class="landing-text">
-    <h1>BOOTSTRAP</h1>
-    <h3>Learn the basic building blocks.</h3>
-    <a href="#" class="btn btn-default btn-lg">Get Started</a>
-  </div>
-  <div class="home-wrap">
-        <div id="home">
-    </div>
-    </div>
-</section>
--->
-
-<!--- iOS Fixed Image Fix
-<figure>
-  <div class="fixed-wrap">
-        <div id="fixed">
-    </div>
-    </div>
-</figure>
--->
