@@ -1,152 +1,200 @@
-﻿html, body {
-	height:100%;
-	width:100%;
-}
-.navbar {
-	background-color: #23415C;
-	padding:1% 0;
-	font-size: 1.2em;
-}
-.navbar-brand {
-	min-height: 55px;
-	padding: 0 15px 5px;
-}
-.navbar-default .navbar-nav li a {
-	color: #D5D5D5;
-}
-.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:active {
-	color: #FFF;
-}
-#home {
-	background: url(img/mountains.jpeg) no-repeat center fixed;
-	display: table;
-	height: 100%;
-	position: relative;
-	width: 100%;
-	background-size: cover;
-}
-.landing-text {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-}
-.landing-text h1 {
-	font-size: 500%;
-	font-weight: 700;
-}
-.padding {
-	padding: 80px 0;
-}
-.padding img {
-	width: 100%;
-}
-#fixed {
-	background: url(img/background.jpg) no-repeat center center fixed;
-	display: table;
-	height: 60%;
-	position: relative;
-	width: 100%;
-	background-size: cover;
-}
-footer {
-	width: 100%;
-	background-color: #23415C;
-	padding: 5% 5% 10% 5%;
-	color: #FFF;
-}
-.fa {
-	padding: 15px;
-	font-size: 25px;
-	color: #FFF;
-}
-.fa:hover {
-	color: #D5D5D5;
-	text-decoration: none;
-}
-.icon {
-	max-width: 200px;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
-	.landing-text h1{
-		font-size: 300%;
-	}
-	.fa {
-		font-size: 20px;
-		padding: 10px;
-	}
-	.icon {
-		padding-top: 5%;
-		max-width: 100px;
-	}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+.navbar-header a,
+.navbar-brand:hover {
+  text-transform: uppercase;
+  color: #ff6600;
+  font-weight: bold;
+}
 
-/*--- iOS Landing Page Fix
-section {
- 	position: relative;
- 	width: 100%;
- 	height: 100%;
- 	display: table;
+.nav-link:hover {
+  color: #ff6600;
+  
 }
-.home-wrap {
- 	clip: rect(0, auto, auto, 0);
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	width: 100%;
- 	height: 100%;
-}
-#home {
-	background-image: url('img/mountains.jpeg');
- 	position: fixed;
- 	display: table;
- 	top: 0;
- 	left: 0;
- 	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center center;
-	-webkit-transform: translateZ(0);
-          transform: translateZ(0);
-	will-change: transform;
-	z-index: -1;
-}
-.landing-text {
-	z-index: 100;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-}
---*/
 
-/*--- iOS Fixed Image Fix
-figure {
-	position: relative;
-	width: 100%;
-	height: 60%;
+#welcome-section {
+  background: url(https://res.cloudinary.com/djgsfr07o/image/upload/v1554182309/IMG_0851-edit.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: table;
 }
-.fixed-wrap {
-	clip: rect(0, auto, auto, 0);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-#fixed {
-	background-image: url('img/background.jpg');
-	position: fixed;
-	display: block;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center center;
-	-webkit-transform: translateZ(0);
-          transform: translateZ(0);
-	will-change: transform;
-}
---*/
 
+#welcome-text {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#welcome-section h1 {
+  font-size: 500%;
+  font-weight: 700;
+}
+
+#welcome-section h2 {
+  margin-bottom: 35px;
+}
+
+#resume-button {
+  color: black;
+  font-weight: bold;
+  text-shadow: none;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #ff6600;
+  border: none;
+  transition: 0.3s;
+}
+
+#resume-button:hover {
+  background-color: #ff9966;
+  text-decoration: none;
+}
+
+#resume-button a,
+#resume-button a:hover {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px black;
+}
+
+#projects {
+  height: 250px;
+  transition: 0.2s;
+}
+
+#projects h2 {
+  padding-top: 10px;
+}
+
+.project-tile {
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+  text-align: center;
+}
+
+.project-tile a {
+  color: white;
+  transition: 0.3s;
+}
+
+.project-tile a:hover {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+#img-row {
+  text-align: center;
+}
+
+.project-img {
+  width: 275px;
+  margin-top: 6px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+#links {
+  height: 150px;
+  padding-top: 15px;
+  background: url(https://res.cloudinary.com/djgsfr07o/image/upload/v1554182269/IMG_0777.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+#link-list {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.social-link {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff6600;
+  margin-bottom: 100px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #ff9966;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-img {
+  width: 200px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  #welcome-section h1 {
+  font-size: 275%;
+}
+  
+  #welcome-section h2 {
+  margin-bottom: 25px;
+}
+  
+  #resume-button {
+    padding: 10px;
+  }
+  
+  #projects {
+    height: 225px;
+  }
+  
+  .project-img {
+  width: 150px;
+}
+}
+
+@media only screen and (max-width: 625px) {
+  .social-link {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #projects {
+    height: 150px;
+  }
+  
+  .project-img {
+  width: 0px;
+  }
+  
+  .social-link {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+.social-link {
+    font-size: 8px;
+  }
+}
