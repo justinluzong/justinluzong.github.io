@@ -1,200 +1,218 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+  }
+
+.container-fluid {
+    background-image: url("/images/guilherme-madaleno-AmCj2sJD8p8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
+#navbar {
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 100vh;
+    max-height: 4500px;
+    background-color:rgba(230, 96, 0, 0.90);
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
 }
 
-.navbar-header a,
+.navbar-header {
+    text-align: center;
+}
+
+.avatar {
+    margin-top: 30px;
+    margin-bottom: 10px; 
+    width: 175px;
+}
+
+.navbar-brand {
+    color:	white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 0px;
+}
+
 .navbar-brand:hover {
-  text-transform: uppercase;
-  color: #ff6600;
-  font-weight: bold;
+    color:	white;
+    text-decoration: none;
 }
+
+#nav-area {
+    height: 100vh;
+}
+
+.navbar-text {
+    color: black;
+    font-size: 16px;
+    padding-top: 0px;
+}
+
+.navbar-text:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
 .nav-link:hover {
-  color: #ff6600;
-  
-}
-
-#welcome-section {
-  background: url(https://res.cloudinary.com/djgsfr07o/image/upload/v1554182309/IMG_0851-edit.jpg) no-repeat center fixed;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  display: table;
-}
-
-#welcome-text {
-  text-transform: uppercase;
-  text-shadow: 2px 2px 5px black;
-  color: white;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-#welcome-section h1 {
-  font-size: 500%;
-  font-weight: 700;
-}
-
-#welcome-section h2 {
-  margin-bottom: 35px;
-}
-
-#resume-button {
-  color: black;
-  font-weight: bold;
-  text-shadow: none;
-  padding: 12px;
-  border-radius: 4px;
-  background-color: #ff6600;
-  border: none;
-  transition: 0.3s;
-}
-
-#resume-button:hover {
-  background-color: #ff9966;
-  text-decoration: none;
-}
-
-#resume-button a,
-#resume-button a:hover {
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-section h2 {
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 3px black;
-}
-
-#projects {
-  height: 250px;
-  transition: 0.2s;
-}
-
-#projects h2 {
-  padding-top: 10px;
-}
-
-.project-tile {
-  font-size: 20px;
-  font-weight: bold;
-  list-style: none;
-  text-align: center;
-}
-
-.project-tile a {
-  color: white;
-  transition: 0.3s;
-}
-
-.project-tile a:hover {
-  color: #ff6600;
-  text-decoration: none;
-}
-
-#img-row {
-  text-align: center;
-}
-
-.project-img {
-  width: 275px;
-  margin-top: 6px;
-  border-radius: 5px;
-  transition: 0.2s;
-}
-
-#links {
-  height: 150px;
-  padding-top: 15px;
-  background: url(https://res.cloudinary.com/djgsfr07o/image/upload/v1554182269/IMG_0777.jpg) no-repeat center fixed;
-  background-size: cover;
-}
-
-#link-list {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.social-link {
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #ff6600;
-  margin-bottom: 100px;
-  padding: 8px;
-  border-radius: 4px;
-  transition: 0.3s;
-}
-
-.social-link:hover {
-  color: black;
-  text-decoration: none;
-  background-color: #ff9966;
-}
-
-@media only screen and (max-width: 1000px) {
-  .project-img {
-  width: 200px;
-}
-}
-
-@media only screen and (max-width: 800px) {
-  #welcome-section h1 {
-  font-size: 275%;
-}
-  
-  #welcome-section h2 {
-  margin-bottom: 25px;
-}
-  
-  #resume-button {
-    padding: 10px;
-  }
-  
-  #projects {
-    height: 225px;
-  }
-  
-  .project-img {
-  width: 150px;
-}
-}
-
-@media only screen and (max-width: 625px) {
-  .social-link {
-    font-size: 14px;
-  }
+    color:black
 }
 
 @media only screen and (max-width: 575px) {
-  #projects {
-    height: 150px;
-  }
-  
-  .project-img {
-  width: 0px;
-  }
-  
-  .social-link {
-    font-size: 12px;
-  }
+    #navbar {
+        max-width: 200px;
+    }
+    #nav-area {
+        min-width: 192px;
+    }
+    .navbar-header {
+        min-width: 192px;
+    }
 }
 
-@media only screen and (max-width: 475px) {
-.social-link {
-    font-size: 8px;
-  }
+#main-home {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 75px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#main-home h1 {
+    color:#e66000;
+    font-weight: bold;
+}
+
+#home-text {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+}
+
+#resume-button {
+    color: #565656;
+    font-weight: bold;
+    text-shadow: none;
+    padding: 12px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: #565656;
+    transition: 0.3s;
+}
+  
+#resume-button:hover {
+    text-decoration: none;
+    color:#e66000;
+    border-color:#e66000;
+}
+  
+#resume-button a, #resume-button a:hover {
+    color: #565656;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    background-color:white;
+}
+
+#main-portfolio {
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#portfolio-header {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+#portfolio-header h1 {
+    text-align: center;
+    color: #e66000;
+    font-weight: bold;
+}
+
+.portfolio-entry {
+    color: black;
+    margin-left: 10%;
+    margin-right: 5%;
+    padding-top: 14px;
+    padding-bottom: 20px;
+}
+
+.portfolio-entry h2 {
+    color: #e66000;
+}
+
+.portfolio-entry a:hover {
+    text-decoration: none;
+}
+
+.portfolio-date {
+    font-weight: bold;
+    font-size: 16px;
+    color: #565656;
+    margin-top: -5px;
+}
+
+.portfolio-entry img {
+    width: 400px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#main-contact {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.75);
+    
+}
+
+#main-contact h1 {
+    color:#e66000;
+    font-weight: bold;
+}
+
+#contact-table {
+    margin-top: 25px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#contact-table th {
+    color:black;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#contact-table tr {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#contact-table a {
+    color:#e66000;
+    padding-left: 20px;
 }
