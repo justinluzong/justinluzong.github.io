@@ -1,2 +1,2 @@
 # justinluzong.github.io
-I'm learning how to use this. yup.
+Portfolio website hosted through GitHub Pages that is being used to learn Git.
