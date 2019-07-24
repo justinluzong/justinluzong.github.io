@@ -128,6 +128,7 @@ html {
 #main-portfolio {
     font-family: 'DM Sans', sans-serif;
     background-color: white;
+    padding-bottom: 10px;
 }
 
 #portfolio-header {
