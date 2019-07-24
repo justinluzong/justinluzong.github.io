@@ -29,7 +29,7 @@ html {
 }
 
 .navbar-brand {
-    color:	white;
+    color:	black;
     font-size: 24px;
     font-weight: bold;
     margin-left: 0px;
@@ -38,7 +38,7 @@ html {
 }
 
 .navbar-brand:hover {
-    color:	white;
+    color:	black;
     text-decoration: none;
 }
 
@@ -65,25 +65,20 @@ html {
 .nav-link {
     font-size: 16px;
     color: white;
+    opacity: 0.6;
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
   }
 
 .nav-link:hover {
-    color:black
+    color:white;
+    opacity: 1;
 }
 
-@media only screen and (max-width: 575px) {
-    #navbar {
-        max-width: 200px;
-    }
-    #nav-area {
-        min-width: 192px;
-    }
-    .navbar-header {
-        min-width: 192px;
-    }
+.active a {
+    font-weight: bold;
+    opacity: 1;
 }
 
 #main-home {
@@ -100,19 +95,19 @@ html {
 }
 
 #home-text {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 18%;
+    margin-right: 18%;
     padding-bottom: 20px;
 }
 
 #resume-button {
-    color: #565656;
+    color: black;
     font-weight: bold;
     text-shadow: none;
     padding: 12px;
     border-radius: 1px;
     border-style: solid;
-    border-color: #565656;
+    border-color: black;
     transition: 0.3s;
 }
   
@@ -120,14 +115,14 @@ html {
     text-decoration: none;
     color:#e66000;
     border-color:#e66000;
+    background-color:rgba(255, 255, 255, 0.5);
 }
   
 #resume-button a, #resume-button a:hover {
-    color: #565656;
+    color: black;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    background-color:white;
 }
 
 #main-portfolio {
@@ -197,8 +192,8 @@ hr {
 
 #contact-table {
     margin-top: 25px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #contact-table th {
@@ -215,4 +210,109 @@ hr {
 #contact-table a {
     color:#e66000;
     padding-left: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    .container-fluid {
+        background-size: cover;
+    }
+    
+    #navbar {
+        min-height: 40px;
+        max-height: 40px;
+        min-width: 100vw;
+        max-width: 100vw;
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+
+    .avatar {
+        width: 0;
+        height: 0;
+        margin: 0px;
+    }
+
+    .navbar-header {
+        size: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-brand, .navbar-text {
+        font-size: 0;
+    }
+
+    #nav-area {
+        position: static;
+        min-width: 100vw;
+        max-width: 100vw;
+        max-height: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.nav {
+        max-height: inherit;
+    }
+
+    .navbar-nav {
+        margin-top: -80px;
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 100vw;
+        max-width: 100vw;
+        min-height: 40px;
+        max-height: 40px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style-type: none;
+    }
+
+    .navbar-nav li {
+        text-align: center;
+        margin-bottom: -15px;
+        max-height: inherit;
+    }
+
+    .navbar-nav li a {
+        font-size: 14px;
+    }
+
+    .col {
+        height: 100vh;
+    }
+
+    #home-text {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    .portfolio-entry {
+        color: black;
+        margin-left: 5%;
+    }
+
+    .portfolio-entry img {
+        width: 350px;
+        display: block;
+        margin: auto;
+        transition: 0.1s;
+    }
+
+}
+    
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+
+}
+    
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    #home-text {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
