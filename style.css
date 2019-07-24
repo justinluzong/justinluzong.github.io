@@ -315,4 +315,8 @@ hr {
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    .portfolio-entry img {
+        width: 300px;
+    }
 }
