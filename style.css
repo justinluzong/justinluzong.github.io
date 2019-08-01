@@ -3,7 +3,7 @@ html {
   }
 
 .container-fluid {
-    background-image: url("/images/guilherme-madaleno-AmCj2sJD8p8-unsplash.jpg");
+    background-image: url("/images/tyrel-johnson-xBhFZ3i75m4-unsplash.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -86,7 +86,7 @@ html {
     text-align: center;
     font-size: 18px;
     padding-top: 75px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #main-home h1 {
@@ -158,13 +158,6 @@ html {
     text-decoration: none;
 }
 
-.portfolio-date {
-    font-weight: bold;
-    font-size: 16px;
-    color: #565656;
-    margin-top: -5px;
-}
-
 .portfolio-entry img {
     width: 400px;
 }
@@ -178,11 +171,30 @@ hr {
     padding: 0;
 }
 
+.my-img a {
+    display: inline-block;
+}
+
+.modal-lg {
+    width: 730px;
+}
+
+.modal-body {
+    overflow: none;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-body img {
+    height: 85%;
+}
+
 #main-contact {
     font-family: 'DM Sans', sans-serif;
     text-align: center;
     padding-top: 40px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
     
 }
 
@@ -303,11 +315,18 @@ hr {
         transition: 0.1s;
     }
 
+    .modal-lg {
+        min-width: 730px;
+    }
+
 }
     
 @media screen and (max-width: 767px) {
     /* start of medium tablet styles */
-
+    .modal-lg {
+        min-width: 700px;
+        max-width: 700px;
+    }
 }
     
 @media screen and (max-width: 479px) {
@@ -319,5 +338,16 @@ hr {
 
     .portfolio-entry img {
         width: 300px;
+    }
+
+    .modal-lg {
+        min-width: 475px;
+        max-width: 475px;
+    }
+
+    .modal-body img {
+        min-width: 475px;
+        max-width: 475px;
+        height: auto;
     }
 }
