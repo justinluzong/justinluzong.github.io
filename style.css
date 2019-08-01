@@ -175,13 +175,17 @@ hr {
     display: inline-block;
 }
 
-.modal-lg {
-    width: 730px;
+.modal-content {
+    background: none;
+    border: none;
+}
+
+.modal-header {
+    border: none;
 }
 
 .modal-body {
     overflow: none;
-    max-height: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -315,18 +319,19 @@ hr {
         transition: 0.1s;
     }
 
-    .modal-lg {
-        min-width: 730px;
+    .modal-body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-body img {
+        margin-left: -20px;
     }
 
 }
     
 @media screen and (max-width: 767px) {
     /* start of medium tablet styles */
-    .modal-lg {
-        min-width: 700px;
-        max-width: 700px;
-    }
 }
     
 @media screen and (max-width: 479px) {
@@ -340,14 +345,9 @@ hr {
         width: 300px;
     }
 
-    .modal-lg {
-        min-width: 475px;
-        max-width: 475px;
-    }
+
 
     .modal-body img {
-        min-width: 475px;
-        max-width: 475px;
-        height: auto;
+        margin-left: 0px;
     }
 }
