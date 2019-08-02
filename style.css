@@ -160,6 +160,12 @@ html {
 
 .portfolio-entry img {
     width: 400px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.portfolio-entry img:hover {
+    opacity: 0.7;
 }
 
 hr {
@@ -184,14 +190,21 @@ hr {
     border: none;
 }
 
+#modalCloseButton {
+    color: white;
+    opacity: 1;
+}
+
 .modal-body {
+    margin-top: -25px;
     overflow: none;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .modal-body img {
-    height: 85%;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #main-contact {
@@ -318,16 +331,6 @@ hr {
         margin: auto;
         transition: 0.1s;
     }
-
-    .modal-body {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .modal-body img {
-        margin-left: -20px;
-    }
-
 }
     
 @media screen and (max-width: 767px) {
@@ -343,11 +346,5 @@ hr {
 
     .portfolio-entry img {
         width: 300px;
-    }
-
-
-
-    .modal-body img {
-        margin-left: 0px;
     }
 }
